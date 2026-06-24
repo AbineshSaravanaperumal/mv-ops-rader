@@ -1,0 +1,6 @@
+gnews==0.8.1
+requests
+beautifulsoup4
+streamlit
+groq
+python-dotenv

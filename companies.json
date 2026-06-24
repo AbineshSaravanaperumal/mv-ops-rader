@@ -1,0 +1,66 @@
+[
+  {
+    "name": "SaaS Academy",
+    "website": "https://www.saasacademy.com",
+    "description": "B2B SaaS coaching and advisory for founders",
+    "founder": "Dan Martell",
+    "twitter": "danmartell",
+    "careers_url": "https://www.saasacademy.com/careers"
+  },
+  {
+    "name": "Streak CRM",
+    "website": "https://www.streak.com",
+    "description": "CRM built inside Gmail",
+    "founder": "Gareth Price",
+    "twitter": "garethprice",
+    "careers_url": "https://www.streak.com/jobs"
+  },
+  {
+    "name": "Bonjoro",
+    "website": "https://www.bonjoro.com",
+    "description": "Personalized video messaging for customer engagement",
+    "founder": "Matt Barnett",
+    "twitter": "pandaposse",
+    "careers_url": "https://www.bonjoro.com/careers"
+  },
+  {
+    "name": "Proposify",
+    "website": "https://www.proposify.com",
+    "description": "Proposal software for sales teams",
+    "founder": "Kyle Racki",
+    "twitter": "kyleracki",
+    "careers_url": "https://www.proposify.com/careers"
+  },
+  {
+    "name": "Drip",
+    "website": "https://www.drip.com",
+    "description": "Ecommerce CRM and email marketing",
+    "founder": "Rob Walling",
+    "twitter": "robwalling",
+    "careers_url": "https://www.drip.com/jobs"
+  },
+  {
+    "name": "Churn Buster",
+    "website": "https://churnbuster.io",
+    "description": "Failed payment recovery for subscription businesses",
+    "founder": "Kristen LaFrance",
+    "twitter": "kdlafrance",
+    "careers_url": "https://churnbuster.io/jobs"
+  },
+  {
+    "name": "Demio",
+    "website": "https://www.demio.com",
+    "description": "Webinar platform for marketing teams",
+    "founder": "Wyatt Jozwowski",
+    "twitter": "wyattjoz",
+    "careers_url": "https://www.demio.com/careers"
+  },
+  {
+    "name": "Flowster",
+    "website": "https://flowster.app",
+    "description": "SOPs and workflow automation for remote teams",
+    "founder": "Tom Sylvester",
+    "twitter": "tomcsylvester",
+    "careers_url": "https://flowster.app/careers"
+  }
+]

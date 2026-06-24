@@ -1,0 +1,7 @@
+echo .env > .gitignore
+echo __pycache__/ >> .gitignore
+echo fetchers/__pycache__/ >> .gitignore
+echo *.pyc >> .gitignore
+echo data/raw/ >> .gitignore
+echo data/reports/ >> .gitignore
+echo data/jobs_history.json >> .gitignore
