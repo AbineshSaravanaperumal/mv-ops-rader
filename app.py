@@ -1,8 +1,7 @@
 import streamlit as st
 import json
 import os
-import subprocess
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 st.set_page_config(
@@ -15,33 +14,29 @@ st.markdown("""
 <style>
     .main { background-color: #0e1117; }
     .block-container { padding-top: 1.5rem; }
-    .company-card {
+    .refresh-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
         background: #1a1d24;
         border: 1px solid #2d3139;
-        border-radius: 10px;
-        padding: 1rem 1.2rem;
-        margin-bottom: 0.75rem;
-    }
-    .digest-box {
-        background: #1a1d24;
-        border: 1px solid #2d3139;
-        border-radius: 10px;
-        padding: 1.5rem;
-        line-height: 1.8;
-        font-size: 0.95rem;
-    }
-    .metric-row {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
-    .tag {
-        display: inline-block;
-        padding: 2px 10px;
         border-radius: 20px;
-        font-size: 0.75rem;
-        font-weight: 500;
-        margin-right: 4px;
+        padding: 4px 12px;
+        font-size: 0.78rem;
+        color: #888;
+    }
+    .live-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #00c853;
+        display: inline-block;
+        animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.3; }
+        100% { opacity: 1; }
     }
 </style>
 """, unsafe_allow_html=True)
@@ -70,45 +65,52 @@ def extract_key_signal(brief_text: str) -> str:
             return line.replace("KEY SIGNAL:", "").strip()
     return "No signal extracted."
 
-def run_pipeline():
-    with st.spinner("Running data collectors..."):
-        result = subprocess.run(
-            ["python", "run.py"],
-            capture_output=True, text=True
-        )
-        if result.returncode != 0:
-            st.error(f"Pipeline error: {result.stderr}")
-            return False
-    with st.spinner("Running AI analyzer..."):
-        result = subprocess.run(
-            ["python", "ai_analyzer.py"],
-            capture_output=True, text=True
-        )
-        if result.returncode != 0:
-            st.error(f"Analyzer error: {result.stderr}")
-            return False
-    return True
+def next_monday(from_date: datetime) -> datetime:
+    days_ahead = 7 - from_date.weekday()
+    if days_ahead == 7:
+        days_ahead = 0
+    return from_date + timedelta(days=days_ahead)
 
 # ── Header ──────────────────────────────────────────────
 col1, col2 = st.columns([3, 1])
+
+report = load_latest_report()
+generated_at = report.get("generated_at", "") if report else ""
+
 with col1:
     st.markdown("## 📡 MV Ops Radar")
     st.caption("Martell Ventures Portfolio Intelligence")
+
 with col2:
-    if st.button("🔄 Run Fresh Report", use_container_width=True, type="primary"):
-        if run_pipeline():
-            st.success("Report updated.")
-            st.rerun()
+    if generated_at:
+        try:
+            last_run = datetime.strptime(generated_at, "%Y-%m-%d %H:%M")
+            next_run = next_monday(last_run)
+            days_until = (next_run.date() - datetime.now().date()).days
+            if days_until <= 0:
+                next_label = "today"
+            elif days_until == 1:
+                next_label = "tomorrow"
+            else:
+                next_label = f"in {days_until} days"
+
+            st.markdown(f"""
+            <div class="refresh-badge">
+                <span class="live-dot"></span>
+                Refreshes every Monday · Next refresh {next_label}
+            </div>
+            """, unsafe_allow_html=True)
+        except:
+            st.markdown('<div class="refresh-badge"><span class="live-dot"></span> Weekly refresh active</div>', unsafe_allow_html=True)
+    else:
+        st.markdown('<div class="refresh-badge"><span class="live-dot"></span> Weekly refresh active</div>', unsafe_allow_html=True)
 
 st.divider()
 
-report = load_latest_report()
-
 if not report:
-    st.info("No report found. Click **Run Fresh Report** to generate one.")
+    st.info("No report found. Pipeline runs every Monday automatically.")
     st.stop()
 
-generated_at = report.get("generated_at", "Unknown")
 st.caption(f"Last updated: {generated_at}")
 
 # ── Tabs ─────────────────────────────────────────────────
@@ -117,9 +119,8 @@ tab1, tab2 = st.tabs(["📊 Portfolio Overview", "📋 Weekly Digest"])
 with tab1:
     company_briefs = report.get("company_briefs", {})
 
-    # Summary metrics
-    statuses = [get_status_color(b)[1] for b in company_briefs.values()]
     col_a, col_b, col_c, col_d = st.columns(4)
+    statuses = [get_status_color(b)[1] for b in company_briefs.values()]
     col_a.metric("Companies Tracked", len(company_briefs))
     col_b.metric("🔴 Flag", sum(1 for s in statuses if "Flag" in s))
     col_c.metric("🟡 Watch", sum(1 for s in statuses if "Watch" in s))
@@ -127,7 +128,6 @@ with tab1:
 
     st.markdown("---")
 
-    # Sort: Flag first, then Watch, then Strong
     def sort_key(item):
         brief = item[1]
         if "🔴" in brief: return 0
@@ -160,11 +160,6 @@ with tab2:
         st.markdown("")
 
     st.divider()
-
-    if st.button("📋 Copy Digest to Clipboard"):
-        st.code(digest, language=None)
-        st.info("Select all text above and copy.")
-
     st.markdown("### All Company Briefs")
     all_briefs_text = "\n\n" + "="*50 + "\n\n".join(
         [f"{name}\n{'-'*len(name)}\n{brief}"
