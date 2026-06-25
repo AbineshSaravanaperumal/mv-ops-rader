@@ -1,7 +1,7 @@
 {
   "SaaS Academy": {
     "hiring_signals": 0,
-    "last_updated": "2026-06-24"
+    "last_updated": "2026-06-25"
   },
   "Streak CRM": {
     "hiring_signals": 0,
@@ -9,15 +9,15 @@
   },
   "Bonjoro": {
     "hiring_signals": 0,
-    "last_updated": "2026-06-24"
+    "last_updated": "2026-06-25"
   },
   "Proposify": {
     "hiring_signals": 0,
-    "last_updated": "2026-06-24"
+    "last_updated": "2026-06-25"
   },
   "Drip": {
-    "hiring_signals": 0,
-    "last_updated": "2026-06-24"
+    "hiring_signals": 1,
+    "last_updated": "2026-06-25"
   },
   "Churn Buster": {
     "hiring_signals": 0,
@@ -29,6 +29,46 @@
   },
   "Flowster": {
     "hiring_signals": 0,
-    "last_updated": "2026-06-24"
+    "last_updated": "2026-06-25"
+  },
+  "APEX": {
+    "hiring_signals": 1,
+    "last_updated": "2026-06-25"
+  },
+  "Hero Recruiting": {
+    "hiring_signals": 0,
+    "last_updated": "2026-06-25"
+  },
+  "Precision Connect": {
+    "hiring_signals": 0,
+    "last_updated": "2026-06-25"
+  },
+  "Atlas AI": {
+    "hiring_signals": 0,
+    "last_updated": "2026-06-25"
+  },
+  "Intercom": {
+    "hiring_signals": 0,
+    "last_updated": "2026-06-25"
+  },
+  "Founderpath": {
+    "hiring_signals": 0,
+    "last_updated": "2026-06-25"
+  },
+  "Trainual": {
+    "hiring_signals": 0,
+    "last_updated": "2026-06-25"
+  },
+  "PushPress": {
+    "hiring_signals": 0,
+    "last_updated": "2026-06-25"
+  },
+  "Unbounce": {
+    "hiring_signals": 0,
+    "last_updated": "2026-06-25"
+  },
+  "Help Scout": {
+    "hiring_signals": 0,
+    "last_updated": "2026-06-25"
   }
 }

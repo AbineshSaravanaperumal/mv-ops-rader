@@ -7,7 +7,20 @@
     "trend": "\u2192 Stable",
     "articles": []
   },
-  "Streak CRM": {
+  "APEX": {
+    "hiring_signals": 1,
+    "freeze_signals": 0,
+    "prev_hiring_signals": 1,
+    "delta": 0,
+    "trend": "\u2192 Stable",
+    "articles": [
+      {
+        "title": "Governor Newsom welcomes first public preview of California Science Center\u2019s new Air and Space Center ahead of November opening - California State Portal | CA.gov",
+        "published": "Wed, 24 Jun 2026 17:38:42 GMT"
+      }
+    ]
+  },
+  "Hero Recruiting": {
     "hiring_signals": 0,
     "freeze_signals": 0,
     "prev_hiring_signals": 0,
@@ -15,7 +28,63 @@
     "trend": "\u2192 Stable",
     "articles": []
   },
-  "Bonjoro": {
+  "Precision Connect": {
+    "hiring_signals": 0,
+    "freeze_signals": 0,
+    "prev_hiring_signals": 0,
+    "delta": 0,
+    "trend": "\u2192 Stable",
+    "articles": []
+  },
+  "Atlas AI": {
+    "hiring_signals": 0,
+    "freeze_signals": 0,
+    "prev_hiring_signals": 0,
+    "delta": 0,
+    "trend": "\u2192 Stable",
+    "articles": []
+  },
+  "Intercom": {
+    "hiring_signals": 0,
+    "freeze_signals": 0,
+    "prev_hiring_signals": 0,
+    "delta": 0,
+    "trend": "\u2192 Stable",
+    "articles": []
+  },
+  "Founderpath": {
+    "hiring_signals": 0,
+    "freeze_signals": 0,
+    "prev_hiring_signals": 0,
+    "delta": 0,
+    "trend": "\u2192 Stable",
+    "articles": []
+  },
+  "Trainual": {
+    "hiring_signals": 0,
+    "freeze_signals": 0,
+    "prev_hiring_signals": 0,
+    "delta": 0,
+    "trend": "\u2192 Stable",
+    "articles": []
+  },
+  "PushPress": {
+    "hiring_signals": 0,
+    "freeze_signals": 0,
+    "prev_hiring_signals": 0,
+    "delta": 0,
+    "trend": "\u2192 Stable",
+    "articles": []
+  },
+  "Unbounce": {
+    "hiring_signals": 0,
+    "freeze_signals": 0,
+    "prev_hiring_signals": 0,
+    "delta": 0,
+    "trend": "\u2192 Stable",
+    "articles": []
+  },
+  "Help Scout": {
     "hiring_signals": 0,
     "freeze_signals": 0,
     "prev_hiring_signals": 0,
@@ -32,22 +101,19 @@
     "articles": []
   },
   "Drip": {
-    "hiring_signals": 0,
+    "hiring_signals": 1,
     "freeze_signals": 0,
     "prev_hiring_signals": 0,
-    "delta": 0,
+    "delta": 1,
     "trend": "\u2192 Stable",
-    "articles": []
+    "articles": [
+      {
+        "title": "Exclusive: \u201cNobody Was Signing Me or Hiring Showik...\" - Rhea Chakraborty on Her Toughest Phase | Filmfare.com - Filmfare",
+        "published": "Wed, 24 Jun 2026 16:46:30 GMT"
+      }
+    ]
   },
-  "Churn Buster": {
-    "hiring_signals": 0,
-    "freeze_signals": 0,
-    "prev_hiring_signals": 0,
-    "delta": 0,
-    "trend": "\u2192 Stable",
-    "articles": []
-  },
-  "Demio": {
+  "Bonjoro": {
     "hiring_signals": 0,
     "freeze_signals": 0,
     "prev_hiring_signals": 0,

@@ -3,11 +3,69 @@
     "articles": [],
     "signals": []
   },
-  "Streak CRM": {
+  "APEX": {
     "articles": [],
     "signals": []
   },
-  "Bonjoro": {
+  "Hero Recruiting": {
+    "articles": [],
+    "signals": []
+  },
+  "Precision Connect": {
+    "articles": [],
+    "signals": []
+  },
+  "Atlas AI": {
+    "articles": [],
+    "signals": []
+  },
+  "Intercom": {
+    "articles": [
+      {
+        "title": "Inside Intercom: 10 lessons from a front-row seat to an Irish tech success story - The Currency",
+        "description": "Inside Intercom: 10 lessons from a front-row seat to an Irish tech success story  The Currency",
+        "published": "Fri, 19 Jun 2026 04:31:40 GMT"
+      },
+      {
+        "title": "The rise of Fin: how Maga founder built a $3.6bn tech juggernaut - The Times",
+        "description": "The rise of Fin: how Maga founder built a $3.6bn tech juggernaut  The Times",
+        "published": "Sat, 20 Jun 2026 16:40:44 GMT"
+      },
+      {
+        "title": "Who is Eoghan McCabe? The Intercom founder behind Ireland\u2019s biggest-ever tech sale - Irish Examiner",
+        "description": "Who is Eoghan McCabe? The Intercom founder behind Ireland\u2019s biggest-ever tech sale  Irish Examiner",
+        "published": "Sat, 20 Jun 2026 04:05:00 GMT"
+      },
+      {
+        "title": "How Salesforce\u2019s deal for Intercom can reshape Irish tech for years - Business Post",
+        "description": "How Salesforce\u2019s deal for Intercom can reshape Irish tech for years  Business Post",
+        "published": "Fri, 19 Jun 2026 12:58:47 GMT"
+      },
+      {
+        "title": "They bet the company on AI. It paid off with a $3.6bn sale - The Currency",
+        "description": "They bet the company on AI. It paid off with a $3.6bn sale  The Currency",
+        "published": "Sat, 20 Jun 2026 04:26:48 GMT"
+      }
+    ],
+    "signals": []
+  },
+  "Founderpath": {
+    "articles": [],
+    "signals": []
+  },
+  "Trainual": {
+    "articles": [],
+    "signals": []
+  },
+  "PushPress": {
+    "articles": [],
+    "signals": []
+  },
+  "Unbounce": {
+    "articles": [],
+    "signals": []
+  },
+  "Help Scout": {
     "articles": [],
     "signals": []
   },
@@ -19,11 +77,7 @@
     "articles": [],
     "signals": []
   },
-  "Churn Buster": {
-    "articles": [],
-    "signals": []
-  },
-  "Demio": {
+  "Bonjoro": {
     "articles": [],
     "signals": []
   },
