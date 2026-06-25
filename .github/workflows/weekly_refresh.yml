@@ -1,0 +1,40 @@
+name: Weekly Portfolio Refresh
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install gnews requests beautifulsoup4 groq python-dotenv
+
+      - name: Run data pipeline
+        run: python run.py
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Run AI analyzer
+        run: python ai_analyzer.py
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Commit updated report
+        run: |
+          git config user.name "mv-ops-radar[bot]"
+          git config user.email "mv-ops-radar@noreply"
+          git add data/reports/
+          git diff --staged --quiet || git commit -m "Weekly refresh $(date +'%Y-%m-%d')"
+          git push
