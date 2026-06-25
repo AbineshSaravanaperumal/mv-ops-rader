@@ -2,65 +2,136 @@
   {
     "name": "SaaS Academy",
     "website": "https://www.saasacademy.com",
-    "description": "B2B SaaS coaching and advisory for founders",
+    "description": "Dan Martell's flagship B2B SaaS coaching platform for founders scaling to $10M+ ARR",
     "founder": "Dan Martell",
     "twitter": "danmartell",
-    "careers_url": "https://www.saasacademy.com/careers"
+    "careers_url": "https://www.saasacademy.com/careers",
+    "mv_relationship": "flagship"
   },
   {
-    "name": "Streak CRM",
-    "website": "https://www.streak.com",
-    "description": "CRM built inside Gmail",
-    "founder": "Gareth Price",
-    "twitter": "garethprice",
-    "careers_url": "https://www.streak.com/jobs"
+    "name": "APEX",
+    "website": "https://apex.host",
+    "description": "Autonomous AI agent platform for founders — agents that work around the clock, remember context, and handle work across sessions",
+    "founder": "Etienne de Bruin",
+    "twitter": "etiennedebruin",
+    "careers_url": "https://apex.host",
+    "mv_relationship": "co-build"
   },
   {
-    "name": "Bonjoro",
-    "website": "https://www.bonjoro.com",
-    "description": "Personalized video messaging for customer engagement",
-    "founder": "Matt Barnett",
-    "twitter": "pandaposse",
-    "careers_url": "https://www.bonjoro.com/careers"
+    "name": "Hero Recruiting",
+    "website": "https://tryhero.ai",
+    "description": "AI-first recruiting platform with no login screen — founders call a phone number, it creates their account and runs the ads",
+    "founder": "Martell Ventures",
+    "twitter": "danmartell",
+    "careers_url": "https://tryhero.ai",
+    "mv_relationship": "co-build"
+  },
+  {
+    "name": "Precision Connect",
+    "website": "https://precisionconnect.ai",
+    "description": "AI tool that cleans and organizes business data dashboards for SMBs",
+    "founder": "Martell Ventures",
+    "twitter": "danmartell",
+    "careers_url": "https://precisionconnect.ai",
+    "mv_relationship": "co-build"
+  },
+  {
+    "name": "Atlas AI",
+    "website": "https://tryatlasai.com",
+    "description": "AI voice agent that calls leads on behalf of businesses, nearly indistinguishable from a human caller",
+    "founder": "Martell Ventures",
+    "twitter": "danmartell",
+    "careers_url": "https://tryatlasai.com",
+    "mv_relationship": "co-build"
+  },
+  {
+    "name": "Intercom",
+    "website": "https://www.intercom.com",
+    "description": "AI-first customer service platform — one of Dan Martell's earliest and most notable angel investments",
+    "founder": "Eoghan McCabe",
+    "twitter": "eoghanmccabe",
+    "careers_url": "https://www.intercom.com/careers",
+    "mv_relationship": "angel"
+  },
+  {
+    "name": "Founderpath",
+    "website": "https://founderpath.com",
+    "description": "Revenue-based financing platform for bootstrapped SaaS founders — Dan Martell angel investment",
+    "founder": "Nathan Latka",
+    "twitter": "nathanlatka",
+    "careers_url": "https://founderpath.com/careers",
+    "mv_relationship": "angel"
+  },
+  {
+    "name": "Trainual",
+    "website": "https://trainual.com",
+    "description": "Employee onboarding and training software for growing businesses — Dan Martell advisor",
+    "founder": "Chris Ronzio",
+    "twitter": "chrisronzio",
+    "careers_url": "https://trainual.com/careers",
+    "mv_relationship": "advisor"
+  },
+  {
+    "name": "PushPress",
+    "website": "https://www.pushpress.com",
+    "description": "Gym management software for fitness businesses — Dan Martell advisor",
+    "founder": "Dan Uyemura",
+    "twitter": "danuyemura",
+    "careers_url": "https://www.pushpress.com/careers",
+    "mv_relationship": "advisor"
+  },
+  {
+    "name": "Unbounce",
+    "website": "https://unbounce.com",
+    "description": "AI-powered landing page builder and conversion optimization platform — Dan Martell angel investment",
+    "founder": "Rick Perreault",
+    "twitter": "rickperreault",
+    "careers_url": "https://unbounce.com/careers",
+    "mv_relationship": "angel"
+  },
+  {
+    "name": "Help Scout",
+    "website": "https://www.helpscout.com",
+    "description": "Customer support platform built for growing teams — Dan Martell angel investment",
+    "founder": "Nick Francis",
+    "twitter": "nickfrancis",
+    "careers_url": "https://www.helpscout.com/company/careers",
+    "mv_relationship": "angel"
   },
   {
     "name": "Proposify",
     "website": "https://www.proposify.com",
-    "description": "Proposal software for sales teams",
+    "description": "Proposal software for closing deals faster — SaaS Academy portfolio company",
     "founder": "Kyle Racki",
     "twitter": "kyleracki",
-    "careers_url": "https://www.proposify.com/careers"
+    "careers_url": "https://www.proposify.com/careers",
+    "mv_relationship": "saas_academy"
   },
   {
     "name": "Drip",
     "website": "https://www.drip.com",
-    "description": "Ecommerce CRM and email marketing",
+    "description": "Ecommerce CRM and email marketing automation platform",
     "founder": "Rob Walling",
     "twitter": "robwalling",
-    "careers_url": "https://www.drip.com/jobs"
+    "careers_url": "https://www.drip.com/jobs",
+    "mv_relationship": "saas_academy"
   },
   {
-    "name": "Churn Buster",
-    "website": "https://churnbuster.io",
-    "description": "Failed payment recovery for subscription businesses",
-    "founder": "Kristen LaFrance",
-    "twitter": "kdlafrance",
-    "careers_url": "https://churnbuster.io/jobs"
-  },
-  {
-    "name": "Demio",
-    "website": "https://www.demio.com",
-    "description": "Webinar platform for marketing teams",
-    "founder": "Wyatt Jozwowski",
-    "twitter": "wyattjoz",
-    "careers_url": "https://www.demio.com/careers"
+    "name": "Bonjoro",
+    "website": "https://www.bonjoro.com",
+    "description": "Personalized video messaging platform for customer onboarding and retention",
+    "founder": "Matt Barnett",
+    "twitter": "pandaposse",
+    "careers_url": "https://www.bonjoro.com/careers",
+    "mv_relationship": "saas_academy"
   },
   {
     "name": "Flowster",
     "website": "https://flowster.app",
-    "description": "SOPs and workflow automation for remote teams",
+    "description": "SOP and workflow automation platform for remote teams",
     "founder": "Tom Sylvester",
     "twitter": "tomcsylvester",
-    "careers_url": "https://flowster.app/careers"
+    "careers_url": "https://flowster.app/careers",
+    "mv_relationship": "saas_academy"
   }
 ]
